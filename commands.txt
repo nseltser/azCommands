@@ -1,0 +1,2 @@
+#check
+az storage share exists --account-key $sakey --account-name $saname --name $file-share-name
