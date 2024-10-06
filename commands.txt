@@ -2,3 +2,5 @@
 az storage share exists --account-key $sakey --account-name $saname --name $file-share-name
 
 az storage share exists --service-principal -u and [object_id/application_id/application_object_id] -p [secret]
+
+az login --service-principal -u [object_id/application_id/application_object_id] -p [secret] --tenant
