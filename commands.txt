@@ -3,4 +3,6 @@ az storage share exists --account-key $sakey --account-name $saname --name $file
 
 az storage share exists --service-principal -u and [object_id/application_id/application_object_id] -p [secret]
 
-az login --service-principal -u [object_id/application_id/application_object_id] -p [secret] --tenant
+az login --service-principal -u [object_id/application_id/application_object_id] -p [secret] --tenant [tenant] --allow-no-subscriptions;
+
+az acr login -n <acr> --expose-token
