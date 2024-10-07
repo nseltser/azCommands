@@ -6,3 +6,9 @@ az storage share exists --service-principal -u and [object_id/application_id/app
 az login --service-principal -u [object_id/application_id/application_object_id] -p [secret] --tenant [tenant] --allow-no-subscriptions;
 
 az acr login -n <acr> --expose-token
+
+# keyvault
+az login --identity
+az account set --name qa
+az keyvault secret show [--id] [--name] [--vault-name] [--version]
+az keyvault secret show --name [secret-name] --vault-name [keyvaut name] -o tsv
