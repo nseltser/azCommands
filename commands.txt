@@ -12,3 +12,6 @@ az login --identity
 az account set --name qa
 az keyvault secret show [--id] [--name] [--vault-name] [--version]
 az keyvault secret show --name [secret-name] --vault-name [keyvaut name] -o tsv
+
+#publish to artifact azure
+az artifacts universal publish --organization https://org_name --project="ProjectName" --scope project --feed $feedname --name $pkgname --version $version --description "here" --path .;
